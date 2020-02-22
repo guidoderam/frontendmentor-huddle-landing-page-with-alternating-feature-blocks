@@ -1,0 +1,26 @@
+.background-hero {
+    background-image: url('/src/assets/img/bg-hero-desktop.svg');
+    background-color: $pale-cyan;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero {
+    padding: 0 80px 72px 90px;
+    box-sizing: content-box;
+    height: 482px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__content, &__visual {
+        flex: 0 0 47%;
+    }
+
+    &__visual {
+        img {
+            width: 100%;
+        }
+    }
+}

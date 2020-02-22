@@ -1,0 +1,26 @@
+.btn {
+    border-radius: 24px;
+    border-width: 0;
+    padding: 16px 67px;
+    font-weight: bold;
+    font-size: 0.7777777777777778rem;
+    //line-height: 19px;
+    background-color: white;
+    color: $dark-cyan;
+    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.0954201);
+    -webkit-appearance: media-slider;
+
+    &--large {
+        padding: 20px 67px;
+    }
+
+    &--xl {
+        font-size: 1.1111111111111112rem;
+        padding: 32px 67px;
+    }
+    
+    &--primary {
+        background-color: $pink;
+        color: $pale-cyan;
+    }
+}
