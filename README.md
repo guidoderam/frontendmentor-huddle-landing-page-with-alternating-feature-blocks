@@ -1,0 +1,1 @@
+frontendmentor-huddle-landing-page-with-alternating-feature-blocks
