@@ -1,26 +1,62 @@
 .background-hero {
-    background-image: url('/src/assets/img/bg-hero-desktop.svg');
+    background-image: url('/src/assets/img/bg-hero-mobile.svg');
     background-color: $pale-cyan;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media screen and (min-width: map-get($breakpoints, "medium")) {
+        background-image: url('/src/assets/img/bg-hero-desktop.svg');
+    }
 }
 
 .hero {
-    padding: 0 80px 72px 90px;
+    padding: 131px 35px 37px;
+    margin-bottom: 59px;
     box-sizing: content-box;
-    height: 482px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    @media screen and (min-width: map-get($breakpoints, "medium")) {
+        display: flex;
+        padding: 167px 60px 72px 70px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 160px;
+    }
 
     &__content, &__visual {
-        flex: 0 0 47%;
+        text-align: center;
+
+        @media screen and (min-width: map-get($breakpoints, "medium")) {
+            text-align: left;
+        }
+    }
+
+    &__content {
+        p {
+            margin-bottom: 32px;
+        }
+
+        .btn {
+            margin-bottom: 56px;
+
+            @media screen and (min-width: map-get($breakpoints, "medium")) {
+                margin-bottom: 0;
+            }
+        }
     }
 
     &__visual {
         img {
             width: 100%;
+        }
+
+        @media screen and (min-width: map-get($breakpoints, "medium")) {
+            margin-left: 54px;
+
+            img {
+                max-width: 680px;
+            }
         }
     }
 }

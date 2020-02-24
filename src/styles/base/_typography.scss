@@ -2,12 +2,18 @@
  * Basic typography style for copy text
  */
 body {
+  font-size: 16px;
   color: $text-color;
   font-family: $text-font-stack;
-  line-height: 27;
   font-style: normal;
   font-weight: normal;
-  line-height: 27px;
+  line-height: 24px;
+  
+
+  @media screen and (min-width: map-get($breakpoints, "medium")) {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 h1, h2 {
@@ -18,9 +24,15 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 2.2222222222222223rem;
-  line-height: 60px;
-  margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: map-get($breakpoints, "medium")) {
+    font-size: 2.2222222222222223rem;
+    margin-bottom: 32px;
+    line-height: 60px;
+  }
 }
 
 h2 {

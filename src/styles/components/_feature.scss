@@ -1,0 +1,55 @@
+.feature {
+    margin: 40px 0;
+    padding: 24px 39px 33px 40px;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: map-get($breakpoints, "medium")) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1232px;
+        max-height: 440px;
+        margin: 40px auto;
+    }
+
+    &__content, &__visual {
+        
+        @media screen and (min-width: map-get($breakpoints, "medium")) {
+            flex: 0 0 47%;
+        }
+    }
+
+    &__content {
+        order: 1;
+        text-align: center;
+
+        @media screen and (min-width: map-get($breakpoints, "medium")) {
+            order: unset;
+        }
+        
+        p {
+            color: $gray;
+        }
+    }
+
+    &__visual {
+        padding: 32px 10px 31px;
+
+        @media screen and (min-width: map-get($breakpoints, "medium")) {
+            max-width: 440px;
+        }
+        
+        img {
+            display: block;
+            margin: auto;
+            width: 100%;
+
+            @media screen and (min-width: map-get($breakpoints, "medium")) {
+                height: 332.29px;
+            }
+        }
+    }
+}

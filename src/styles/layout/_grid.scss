@@ -1,9 +1,13 @@
 .row {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   width: 100%;
   justify-content: space-between;
+
+  @media screen and (min-width: map-get($breakpoints, "medium")) {
+    flex-direction: row;
+  }
 }
 
 .column {

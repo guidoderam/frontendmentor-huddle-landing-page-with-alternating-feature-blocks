@@ -1,22 +1,45 @@
 .btn {
-    border-radius: 24px;
+    border-radius: 12px;
     border-width: 0;
-    padding: 16px 67px;
+    padding: 6.5px 24.4px;
     font-weight: bold;
-    font-size: 0.7777777777777778rem;
-    //line-height: 19px;
+    font-size: 10px;
     background-color: white;
     color: $dark-cyan;
-    box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.0954201);
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.0954201);
     -webkit-appearance: media-slider;
+
+    @media screen and (min-width: map-get($breakpoints, "medium")) {
+        font-size: 14px;
+        padding: 16px 67px;
+        border-radius: 24px;
+        box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.0954201);
+    }
 
     &--large {
         padding: 20px 67px;
+        border-radius: 20px;
+        box-shadow: 2px 3px 6px rgba(255, 82, 193, 0.166185);
+        font-size: 12px;
+
+        @media screen and (min-width: map-get($breakpoints, "medium")) {
+            font-size: 14px;
+            box-shadow: 2px 3px 6px rgba(255, 82, 193, 0.166185);
+            border-radius: 28px;
+        }
     }
 
     &--xl {
-        font-size: 1.1111111111111112rem;
-        padding: 32px 67px;
+        padding: 12.5px 51px;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 15px;
+
+        @media screen and (min-width: map-get($breakpoints, "medium")) {
+            font-size: 20px;
+            line-height: 30px;
+            padding: 32px 67px;
+        }
     }
     
     &--primary {

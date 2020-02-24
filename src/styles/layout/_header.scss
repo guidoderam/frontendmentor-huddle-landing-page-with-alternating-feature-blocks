@@ -1,6 +1,27 @@
 header {
-    padding: 48px 32px;
+    position: absolute;
+    top: 27px;
+    left: 0;
+    right: 0;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 16px 56px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (min-width: map-get($breakpoints, "medium")) {
+        padding: 48px 80px 71px;
+
+    }
+
+    .logo {
+        width: 104px;
+        height: 16px;
+
+        @media screen and (min-width: map-get($breakpoints, "medium")) {
+            width: 240px;
+            height: 39px;
+        }
+    }
 }
