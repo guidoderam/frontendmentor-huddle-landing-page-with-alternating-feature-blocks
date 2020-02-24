@@ -3,9 +3,8 @@
     color: white;
     padding: 139px 0 48px;
 
-    @media screen and (min-width: map-get($breakpoints, "medium")) {
+    @media screen and (min-width: map-get($breakpoints, "large")) {
         padding: 157px 220px 48px 120px;
-
     }
 
     .column {
@@ -28,7 +27,7 @@
             width: 167px;
             height: 26px;
 
-            @media screen and (min-width: map-get($breakpoints, "medium")) {
+            @media screen and (min-width: map-get($breakpoints, "large")) {
                 width: 240px;
                 height: 38px
             }
@@ -83,7 +82,7 @@
             margin-bottom: 0;
         }
 
-        @media screen and (min-width: map-get($breakpoints, "medium")) {
+        @media screen and (min-width: map-get($breakpoints, "xl")) {
             display: flex;
             flex-direction: row;
             flex-basis: 316px;
@@ -102,7 +101,7 @@
         justify-content: center;
         margin-bottom: 24px;
 
-        @media screen and (min-width: map-get($breakpoints, "medium")) {
+        @media screen and (min-width: map-get($breakpoints, "large")) {
             align-items: flex-start;
             margin-bottom: 53px;
         }
@@ -121,7 +120,7 @@
         line-height: 17px;
         text-align: center;
 
-        @media screen and (min-width: map-get($breakpoints, "medium")) {
+        @media screen and (min-width: map-get($breakpoints, "large")) {
             font-size: 12px;
             line-height: 18px;
             float: right;

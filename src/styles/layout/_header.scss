@@ -10,7 +10,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    @media screen and (min-width: map-get($breakpoints, "medium")) {
+    @media screen and (min-width: map-get($breakpoints, "small")) {
         padding: 48px 80px 71px;
     }
 
@@ -18,7 +18,7 @@ header {
         width: 104px;
         height: 16px;
 
-        @media screen and (min-width: map-get($breakpoints, "medium")) {
+        @media screen and (min-width: map-get($breakpoints, "small")) {
             width: 240px;
             height: 39px;
         }

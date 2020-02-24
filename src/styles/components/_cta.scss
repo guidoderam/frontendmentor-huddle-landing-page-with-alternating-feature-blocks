@@ -13,10 +13,13 @@
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.0710768);
     border-radius: 25px;
 
-    @media screen and (min-width: map-get($breakpoints, "medium")) {
-        max-width: 800px;
+    @media screen and (min-width: map-get($breakpoints, "small")) {
         height: 280px;
+    }
+
+    @media screen and (min-width: map-get($breakpoints, "large")) {
         margin: 0 auto;
+        max-width: 800px;
     }
 
     &__content {
@@ -27,7 +30,7 @@
             font-size: 18px;
             line-height: 30px;
 
-            @media screen and (min-width: map-get($breakpoints, "medium")) {
+            @media screen and (min-width: map-get($breakpoints, "small")) {
                 font-size: 32px;
                 line-height: 60px;
             }
