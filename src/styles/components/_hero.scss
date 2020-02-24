@@ -11,17 +11,17 @@
 }
 
 .hero {
-    padding: 131px 35px 37px;
+    padding: 109px 15px 37px;
     margin-bottom: 59px;
-    box-sizing: content-box;
 
     @media screen and (min-width: map-get($breakpoints, "medium")) {
         display: flex;
-        padding: 167px 60px 72px 70px;
+        padding: 167px 0 72px 0;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 160px;
+        margin-right: 10px;
     }
 
     &__content, &__visual {
@@ -33,9 +33,15 @@
     }
 
     &__content {
+        flex-basis: 536px;
         flex-shrink: 1.5;
-        
+
+        @media screen and (min-width: map-get($breakpoints, "medium")) {
+            margin-right: 30px;
+        }
+
         p {
+            max-width: 520px;
             margin-bottom: 32px;
         }
 
@@ -49,16 +55,16 @@
     }
 
     &__visual {
+        flex-basis: 680px;
 
-        @media screen and (min-width: map-get($breakpoints, "medium")) {
-            margin-left: 54px;
-
-            img {
-                max-width: 680px;
-            }
-        }
         img {
-            width: 100%;
+            height: 209px;
+            width: auto;
+
+            @media screen and (min-width: map-get($breakpoints, "medium")) {
+                height: auto;
+                width: 100%;
+            }
         }
     }
 }

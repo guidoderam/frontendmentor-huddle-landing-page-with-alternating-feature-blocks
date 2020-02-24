@@ -1,7 +1,7 @@
 header {
     display: flex;
     position: absolute;
-    top: 27px;
+    top: 24px;
     right: 0;
     left: 0;
     max-width: $max-width;
@@ -11,7 +11,8 @@ header {
     align-items: center;
 
     @media screen and (min-width: map-get($breakpoints, "small")) {
-        padding: 48px 80px 71px;
+        padding: 0 80px 0;
+        top: 48px;
     }
 
     .logo {
@@ -19,8 +20,8 @@ header {
         height: 16px;
 
         @media screen and (min-width: map-get($breakpoints, "small")) {
-            width: 240px;
-            height: 39px;
+            width: 200px;
+            height: 31px;
         }
     }
 }

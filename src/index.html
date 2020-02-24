@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
     <title>
       Frontend Mentor | Huddle landing page with alternating feature blocks
     </title>
@@ -39,6 +33,9 @@
           </div>
           <div class="hero__visual">
             <img
+              srcset="<%= require('~/assets/img/illustration-mockups-mobile.svg') %> 301w,
+                      <%= require('~/assets/img/illustration-mockups.svg') %> 1035w"
+              sizes="(max-width: 767px) 301px, 1035px"
               src="<%= require('~/assets/img/illustration-mockups.svg') %>"
               alt="mockups"
             />

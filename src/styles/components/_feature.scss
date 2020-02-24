@@ -3,12 +3,13 @@
     margin: 40px 0;
     padding: 24px 39px 33px 40px;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.07);
-    border-radius: 25px;
+    border-radius: 16px;
     flex-direction: column;
 
     @media screen and (min-width: map-get($breakpoints, "medium")) {
         flex-direction: row;
         justify-content: space-between;
+        border-radius: 25px;
         align-items: center;
         max-width: 1232px;
         max-height: 440px;
@@ -32,6 +33,15 @@
         
         p {
             color: $gray;
+            font-size: 14px;
+            line-height: 21px;
+            font-style: normal;
+            font-weight: normal;
+
+            @media screen and (min-width: map-get($breakpoints, "medium")) {
+                font-size: 18px;
+                line-height: 27px;
+            }
         }
     }
 
