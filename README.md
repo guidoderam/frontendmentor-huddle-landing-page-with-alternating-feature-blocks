@@ -1,9 +1,11 @@
-# Webpack Frontend Starterkit
+# Frontend Mentor Huddle landing page with alternating feature blocks Solution
 
-[![Dependabot badge](https://flat.badgen.net/dependabot/wbkd/webpack-starter?icon=dependabot)](https://dependabot.com/)
+This is a solution for the *Huddle landing page with alternating feature blocks* coding challenge as posted on [FrontendMentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100).
 
-A lightweight foundation for your next webpack based frontend project.
-
+This solution features:
+* SASS
+* BEM
+* Flexbox
 
 ### Installation
 
@@ -22,11 +24,3 @@ npm start
 ```
 npm run build
 ```
-
-### Features:
-
-* ES6 Support via [babel](https://babeljs.io/) (v7)
-* SASS Support via [sass-loader](https://github.com/jtangelder/sass-loader)
-* Linting via [eslint-loader](https://github.com/MoOx/eslint-loader)
-
-When you run `npm run build` we use the [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) to move the css to a separate file. The css file gets included in the head of the `index.html`.
