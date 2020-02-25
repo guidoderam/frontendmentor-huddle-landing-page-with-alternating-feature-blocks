@@ -9,7 +9,7 @@
     @media screen and (min-width: map-get($breakpoints, "medium")) {
         flex-direction: row;
         justify-content: space-between;
-        border-radius: 25px;
+        border-radius: 16px;
         align-items: center;
         max-width: 1232px;
         max-height: 440px;
@@ -29,6 +29,7 @@
 
         @media screen and (min-width: map-get($breakpoints, "medium")) {
             order: unset;
+            text-align: left;
         }
         
         p {
