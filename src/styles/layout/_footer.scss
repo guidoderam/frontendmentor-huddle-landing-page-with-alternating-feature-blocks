@@ -1,3 +1,5 @@
+
+
 .footer {
     background-color: $dark-cyan;
     color: white;
@@ -64,17 +66,17 @@
             }
 
             &--phone::before {
-                background-image: url('/src/assets/img/icon-phone.svg');
+                background-image: url('../assets/img/icon-phone.svg');
                 background-size: 18px 18px;
             }
 
             &--location::before {
-                background-image: url('/src/assets/img/icon-location.svg');
+                background-image: url('../assets/img/icon-location.svg');
                 background-size: 12.38px 18px;       
             }
 
             &--email::before {
-                background-image: url('/src/assets/img/icon-email.svg');
+                background-image: url('../assets/img/icon-email.svg');
                 background-size: 20px 16px;
             }
         }
